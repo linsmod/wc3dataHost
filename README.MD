@@ -23,11 +23,15 @@ Discover more at: <https://www.hiveworkshop.com/threads/online-wc3-map-data-view
 1. Clone this repository
 2. Download [wc3hostAssets](https://drive.google.com/file/d/1cusUHkkwODopV39KQw9x6wyPbWBKULyz/view?usp=drive_link) and extract it to somewhere.
 3. Add a env to point to the resource files.
-`WC3DATA_HOME=~/wc3hostAssets/`
+
+```
+export WC3DATA_HOME=~/wc3hostAssets/
+```
+
 4. Also copy the www folder in repository to the path which WC3DATA_HOME point to.
 5. Compile and boot WC3DataHost with IDEA. Java version 17.
 
-## 
+
     Q: But the wc3hostAssets already contains `www`?
 - A: The `www` in wc3hostAssets is a initial version, later version is go with git repository.
 
