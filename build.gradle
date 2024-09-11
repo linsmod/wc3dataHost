@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+}
+
+group = 'linsmod'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    maven { url 'https://maven.aliyun.com/repository/public' }
+//    google {
+//        content {
+//            includeGroupByRegex("com\\.android.*")
+//            includeGroupByRegex("com\\.google.*")
+//            includeGroupByRegex("androidx.*")
+//        }
+//    }
+    mavenCentral()
+    gradlePluginPortal()
+}
+
+dependencies {
+    implementation 'org.litepal.guolindev:core:3.2.3'
+    implementation 'com.google.code.gson:gson:2.10'
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}

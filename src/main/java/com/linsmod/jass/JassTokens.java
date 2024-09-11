@@ -1,0 +1,64 @@
+package com.linsmod.jass;
+
+public class JassTokens {
+    static TokenDef createToken(String name, String r) {
+        return new TokenDef(name, r);
+    }
+    public static TokenDef comment = createToken("comment", "\\/\\/.*").skip();
+    public static TokenDef whitespace = createToken("whitespace", "\s+").skip();
+    public static TokenDef RAWCODE = createToken("RAWCODE", "('''.*?''')");
+    public static TokenDef COMMA = createToken("COMMA", ",");
+    public static TokenDef IF = createToken("IF", "if");
+    public static TokenDef THEN = createToken("THEN", "then");
+    public static TokenDef ELSEIF = createToken("ELSEIF", "elseif");
+    public static TokenDef ELSE = createToken("ELSE", "else");
+    public static TokenDef ENDIF = createToken("ENDIF", "endif");
+    public static TokenDef GLOBALS = createToken("GLOBALS", "globals");
+    public static TokenDef ENDGLOBALS = createToken("ENDGLOBALS", "endglobals");
+    public static TokenDef FUNCTION = createToken("FUNCTION", "function");
+    public static TokenDef TAKES = createToken("TAKES", "takes");
+    public static TokenDef TYPE = createToken("TYPE", "type");
+    public static TokenDef ARRAY = createToken("ARRAY", "array");
+    public static TokenDef NULL = createToken("NULL", "null");
+    public static TokenDef TRUE = createToken("TRUE", "true");
+    public static TokenDef FALSE = createToken("FALSE", "false");
+    public static TokenDef CONSTANT = createToken("CONSTANT", "constant");
+    public static TokenDef HEX_CONSTANT = createToken("HEX_CONSTANT", "0x(([0-9]|[a-f]|[A-F])*)");
+    public static TokenDef DOLLAR_HEX_CONSTANT = createToken("DOLLAR_HEX_CONSTANT", "\\$(([0-9]|[A-F])*)");
+    public static TokenDef RETURNS = createToken("RETURNS", "returns");
+    public static TokenDef RETURN = createToken("RETURN", "return");
+    public static TokenDef EXTENDS = createToken("EXTENDS", "extends");
+    public static TokenDef NATIVE = createToken("NATIVE", "native");
+    public static TokenDef ENDFUNCTION = createToken("ENDFUNCTION", "endfunction");
+    public static TokenDef AND = createToken("AND", "and(?=[\\s()])");
+    public static TokenDef OR = createToken("OR", "or(?=[\\s()])");
+    public static TokenDef LOCAL = createToken("LOCAL", "local");
+    public static TokenDef SET = createToken("SET", "set(?=\\s)");
+    public static TokenDef LOOP = createToken("LOOP", "loop(?=\\s)");
+    public static TokenDef EXITWHEN = createToken("EXITWHEN", "exitwhen");
+    public static TokenDef ENDLOOP = createToken("ENDLOOP", "endloop");
+    public static TokenDef NOTHING = createToken("NOTHING", "nothing");
+    public static TokenDef NOT = createToken("NOT", "not");
+    public static TokenDef CALL = createToken("CALL", "call(?=\\s)");
+    public static TokenDef MULT = createToken("MULT", "\\*");
+    public static TokenDef DIV = createToken("DIV", "\\/");
+    public static TokenDef PLUS = createToken("PLUS", "\\+");
+    public static TokenDef MINUS = createToken("MINUS", "-");
+    public static TokenDef ID = createToken("ID", "[a-zA-Z]\\w*");
+    public static TokenDef LPAREN = createToken("LPAREN", "\\(");
+    public static TokenDef RPAREN = createToken("RPAREN", "\\)");
+    public static TokenDef LSQUAREPAREN = createToken("LSQUAREPAREN", "\\[");
+    public static TokenDef RSQUAREPAREN = createToken("RSQUAREPAREN", "\\]");
+    public static TokenDef NOTEQUALS = createToken("NOTEQUALS", "!=");
+    public static TokenDef EQUALSEQUALS = createToken("EQUALSEQUALS", "==");
+    public static TokenDef LESSOREQUALS = createToken("LESSOREQUALS", "<=");
+    public static TokenDef GREATEROREQUALS = createToken("GREATEROREQUALS", ">=");
+    public static TokenDef EQUALS = createToken("EQUALS", "=");
+    public static TokenDef LESS = createToken("LESS", "<");
+    public static TokenDef GREATER = createToken("GREATER", ">");
+    public static TokenDef IDLITERAL = createToken("IDLITERAL", "'.*?'");
+    public static TokenDef STRINGLITERAL = createToken("STRINGLITERAL", "\"[\\s\\S]*?\"").linebreak();
+    public static TokenDef REAL = createToken("REAL", "[0-9]+\\.[0-9]+");
+    public static TokenDef INTEGER = createToken("INTEGER", "[0-9]+");
+    public static TokenDef NL = createToken("NL", "[\r\n]+");
+}
