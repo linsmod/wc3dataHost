@@ -5,7 +5,7 @@ public class JassTokens {
         return new TokenDef(name, r);
     }
     public static TokenDef comment = createToken("comment", "\\/\\/.*").skip();
-    public static TokenDef whitespace = createToken("whitespace", "\s+").skip();
+    public static TokenDef whitespace = createToken("whitespace", "\\s+").skip();
     public static TokenDef RAWCODE = createToken("RAWCODE", "('''.*?''')");
     public static TokenDef COMMA = createToken("COMMA", ",");
     public static TokenDef IF = createToken("IF", "if");

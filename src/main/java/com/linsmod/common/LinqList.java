@@ -558,15 +558,15 @@ public class LinqList<T> extends ArrayList<T> {
         }
     }
 
-    public Object[] objectArray() {
-        return this.toArray(Object[]::new);
-    }
+//    public Object[] objectArray() {
+//        return this.toArray(Object[]::new);
+//    }
 
-    public int[] toIntArray() {
-        int[] array = new int[size()];
-        this.foreach((x, i) -> array[i] = (int) x);
-        return array;
-    }
+//    public int[] toIntArray() {
+//        int[] array = new int[size()];
+//        this.foreach((x, i) -> array[i] = (int) x);
+//        return array;
+//    }
 
     /**
      * to distinctList, and you got a distinct-ed list.

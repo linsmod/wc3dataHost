@@ -1,10 +1,25 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
 group = 'linsmod'
 version = '1.0-SNAPSHOT'
+mainClassName = 'com.linsmod.Main'
+task fatJar(type: Jar) {
 
+    manifest {
+        attributes 'Main-Class': "${mainClassName}"
+    }
+
+    archiveBaseName = "${rootProject.name}"
+    tasks.withType(Jar){
+        duplicatesStrategy = DuplicatesStrategy.INCLUDE
+    }
+    from { configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
+    //from { configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) } setDuplicatesStrategy(DuplicatesStrategy.INCLUDE) }
+    with jar
+}
 repositories {
     maven { url 'https://maven.aliyun.com/repository/public' }
 //    google {
