@@ -63,6 +63,6 @@ public class Wc3DataHome extends Context {
                 throw new RuntimeException(e);
             }
         }
-        throw new RuntimeException("E: WC3DATA is not configured. Please follow the instructions in project README.");
+        throw new RuntimeException("E: WC3DATA_HOME env is not configured. Please follow the instructions in project README.");
     }
 }
