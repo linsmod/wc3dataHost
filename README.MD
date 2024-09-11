@@ -25,7 +25,7 @@ Discover more at: <https://www.hiveworkshop.com/threads/online-wc3-map-data-view
 3. Add a env to point to the resource files.
 `WC3DATA_HOME=~/wc3hostAssets/`
 4. Also copy the www folder in repository to the path which WC3DATA_HOME point to.
-5. Compile and boot WC3DataHost with IDEA.
+5. Compile and boot WC3DataHost with IDEA. Java version 17.
 
 ## 
     Q: But the wc3hostAssets already contains `www`?
