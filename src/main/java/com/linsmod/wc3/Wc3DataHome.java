@@ -53,7 +53,7 @@ public class Wc3DataHome extends Context {
                 }
             }
         }
-        Log.d("E: WC3DATA is not configured. Please follow the instructions in project README.");
+        Log.d("E: WC3DATA_HOME env is not configured. Please follow the instructions in project README.");
         Log.d("main", "...Hanged due to an error. Will exit in 30 seconds.");
         int seconds = 30;
         while (seconds-- > 0) {

@@ -23,21 +23,19 @@ Discover more at: <https://www.hiveworkshop.com/threads/online-wc3-map-data-view
 1. Clone this repository
 2. Download [wc3hostAssets](https://drive.google.com/file/d/1cusUHkkwODopV39KQw9x6wyPbWBKULyz/view?usp=drive_link) and extract it to somewhere.
 3. Add a env to point to the resource files.
-
 ```
 export WC3DATA_HOME=~/wc3hostAssets/
 ```
-
+- Assuming you append it to the ~/.bashrc, you'd run source ~/.bashrc to make it take effect.
+- Then restart IDEA, if IDEA was started from a terminal, also restart the terminal.
 4. Also copy the www folder in repository to the path which WC3DATA_HOME point to.
-5. Compile and boot WC3DataHost with IDEA. Java version 17.
+5. Compile and boot WC3DataHost with IDEA. Java version 17 is used to build and run this app.
 
+- Q: But the wc3hostAssets already contains a `www`?
+- A: The `www` in wc3hostAssets is a initial version, later updates is go with git repository.
 
-    Q: But the wc3hostAssets already contains `www`?
-- A: The `www` in wc3hostAssets is a initial version, later version is go with git repository.
-
-
-    Q: Which version of Warcraft Mpq data is in wc3hostAssets?
- - `1.27.1.7085` is provided for now. To pack your own version, see steps below.
+- Q: Which version of Warcraft Mpq data is in wc3hostAssets?
+ - A `1.27.1.7085` is provided for now. To pack your own version, see steps below.
 
 
 
