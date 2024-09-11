@@ -5,6 +5,8 @@ WC3DataHost is the http host serving Mpq resources.
 
 WC3DataHost serving Mpq resources to and processing requests from web browser.
 
+![preview](./ss/preview.png)
+
 ## What supports
 - Browsing W3X, W3M, MPQ, and CASC data in a tree structure and examining their contents.
 - Displaying entire map terrains in a 3D view.
