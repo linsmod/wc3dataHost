@@ -79,4 +79,6 @@ By the way, I forked `d07RiV/wc3data`, to generate the `files` with forked versi
    ```
 Still some works should be done to make my fork of `wc3data` available on GitHub. I will publish this tool later.
 
+(Update: 2024-10-07: <b>Mpq2Wc3data tool released, its under tool folder</b>)
+
 For recent news, please go to [HIVE thread: integrate-wc3...](https://www.hiveworkshop.com/threads/integrate-wc3-dot-rivsoft-dot-net-website-is-gone.340498/)
