@@ -71,6 +71,12 @@ By the way, I forked `d07RiV/wc3data`, to generate the `files` with forked versi
    - Leverage the bundled `Mpq2Wc3data` utility.
    - Run with passing Warcraft III installation location, and an output location for the generated `files`.
    ```sh
-   Mpq2Wc3data path/to/warcraft3/installation -o path/to/output/wc3data-files
+   cd Mpq2Wc3data
+   ./main path/to/warcraft3/installation -o path/to/output/wc3data-files
+
+   # Example
+   ./main "/data/WarCraft III/" -b 1.27.1.7085 -o wc3hostAssets
    ```
-Still some works should be done to make my fork of `wc3data` available on GitHub. 
+Still some works should be done to make my fork of `wc3data` available on GitHub. I will publish this tool later.
+
+For recent news, please go to [HIVE thread: integrate-wc3...](https://www.hiveworkshop.com/threads/integrate-wc3-dot-rivsoft-dot-net-website-is-gone.340498/)
