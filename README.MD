@@ -18,7 +18,7 @@ Discover more at: <https://www.hiveworkshop.com/threads/online-wc3-map-data-view
 
 ## Run mpq viewer
 1. Clone this repository
-2. Download [wc3hostAssets from War3 English](https://drive.google.com/file/d/1zkgzlJoIZUrUzQKnL-t5CCZkLw4ofGgw/view?usp=sharing) and extract it to somewhere. Chinese version: [wc3hostAssets War3 Chinese](https://drive.google.com/file/d/1cusUHkkwODopV39KQw9x6wyPbWBKULyz/view?usp=drive_link)
+2. Download [wc3hostAssets of packed from War3 English](https://drive.google.com/file/d/1zkgzlJoIZUrUzQKnL-t5CCZkLw4ofGgw/view?usp=sharing) and extract it to somewhere. Chinese version: [wc3hostAssets of packed from War3 Chinese](https://drive.google.com/file/d/1cusUHkkwODopV39KQw9x6wyPbWBKULyz/view?usp=drive_link)
 3. Add a env to point to the resource files.
 ```
 export WC3DATA_HOME=~/wc3hostAssets/
