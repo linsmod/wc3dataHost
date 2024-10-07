@@ -1,9 +1,6 @@
 # WC3DataHost
-WC3DataHost is a part of `Mpq viewer` tool.
-
-WC3DataHost is the http host serving Mpq resources.
-
 WC3DataHost serving Mpq resources to and processing requests from web browser.
+Then you use WebBrowser to view War3 resource things.
 
 ![preview](./ss/preview.png)
 
@@ -21,7 +18,8 @@ Discover more at: <https://www.hiveworkshop.com/threads/online-wc3-map-data-view
 
 ## Run mpq viewer
 1. Clone this repository
-2. Download [wc3hostAssets](https://drive.google.com/file/d/1cusUHkkwODopV39KQw9x6wyPbWBKULyz/view?usp=drive_link) and extract it to somewhere.
+2. Download [wc3hostAssets from War3 English](https://drive.google.com/file/d/1zkgzlJoIZUrUzQKnL-t5CCZkLw4ofGgw/view?usp=sharing) and extract it to somewhere.
+2.1 [wc3hostAssets War3 Chinese](https://drive.google.com/file/d/1cusUHkkwODopV39KQw9x6wyPbWBKULyz/view?usp=drive_link)
 3. Add a env to point to the resource files.
 ```
 export WC3DATA_HOME=~/wc3hostAssets/
