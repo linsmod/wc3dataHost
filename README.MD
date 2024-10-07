@@ -18,8 +18,7 @@ Discover more at: <https://www.hiveworkshop.com/threads/online-wc3-map-data-view
 
 ## Run mpq viewer
 1. Clone this repository
-2. Download [wc3hostAssets from War3 English](https://drive.google.com/file/d/1zkgzlJoIZUrUzQKnL-t5CCZkLw4ofGgw/view?usp=sharing) and extract it to somewhere.
-2.1 [wc3hostAssets War3 Chinese](https://drive.google.com/file/d/1cusUHkkwODopV39KQw9x6wyPbWBKULyz/view?usp=drive_link)
+2. Download [wc3hostAssets from War3 English](https://drive.google.com/file/d/1zkgzlJoIZUrUzQKnL-t5CCZkLw4ofGgw/view?usp=sharing) and extract it to somewhere. Chinese version: [wc3hostAssets War3 Chinese](https://drive.google.com/file/d/1cusUHkkwODopV39KQw9x6wyPbWBKULyz/view?usp=drive_link)
 3. Add a env to point to the resource files.
 ```
 export WC3DATA_HOME=~/wc3hostAssets/
@@ -30,10 +29,11 @@ export WC3DATA_HOME=~/wc3hostAssets/
 5. Compile and boot WC3DataHost with IDEA. Java version 17 is used to build and run this app.
 
 - Q: But the wc3hostAssets already contains a `www`?
-- A: The `www` in wc3hostAssets is a initial version, later updates is go with git repository.
+- A: If downloaed wc3hostAssets contains a www folder, its the initial version, later updates is go with git repository.
 
 - Q: Which version of Warcraft Mpq data is in wc3hostAssets?
  - A `1.27.1.7085` is provided for now. To pack your own version, see steps below.
+- PS: I m not sure the version is really matched. You'd better be aware of this.
 
 
 
