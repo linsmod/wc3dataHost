@@ -1,6 +1,11 @@
+
 # WC3DataHost
 WC3DataHost serving Mpq resources to and processing requests from web browser.
 Then you use WebBrowser to view War3 resource things.
+
+Update: 2024-10-07: Mpq2Wc3data tool released, its under tool folder
+
+Update: 2024-10-07: English version of wc3hostAssets published, [wc3hostAssets of packed from War3 English](https://drive.google.com/file/d/1zkgzlJoIZUrUzQKnL-t5CCZkLw4ofGgw/view?usp=sharing)
 
 ![preview](./ss/preview.png)
 
